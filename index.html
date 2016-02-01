@@ -5,13 +5,34 @@
       <title>To-Do List</title>
       <link rel="stylesheet" href="assets/css/todos.css"
           type="text/css" media="screen" charset="utf-8">
+      <link
+          href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+      <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <script
           src="assets/js/lib/jquery-2.2.0.min.js"
           type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
 
+    <div id="container">
 
-    <script type="text/javascript" src="assets/js/lib/todos.js"></script>
+      <h1>To-Do List <i id="edit-symbol" class="fa fa-plus"></i></h1>
+
+      <input id="add" type="text" placeholder="Add new to-do item">
+
+      <ul id="todo-list">
+        <li><span class="delete">
+          <i class="fa fa-trash"></i></span> First to-do item</li>
+        <li><span class="delete">
+          <i class="fa fa-trash"></i></span> Second to-do item</li>
+        <li><span class="delete">
+          <i class="fa fa-trash"></i></span> Third to-do item</li>
+      </ul>
+
+    </div><!-- /#container -->
+
+    <script type="text/javascript" src="assets/js/todos.js"></script>
   </body>
 </html>
