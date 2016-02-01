@@ -12,7 +12,7 @@ $('#todo-list').on("click", ".delete", function(e) {
 $('#add').keypress(function(e) {
     if (e.which === 13) {
         var newTodo = $(this).val();
-        var span = '<span class="delete"><i class="fa fa-trash"></i></span> '
+        var span = '<span class="delete"><i class="fa fa-trash"></i></span> ';
         $(this).val("");
         $('#todo-list').append('<li>' + span + newTodo +'</li>');
     }
